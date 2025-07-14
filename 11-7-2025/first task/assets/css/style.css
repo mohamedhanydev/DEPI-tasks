@@ -1,0 +1,81 @@
+/*Global styles*/
+:root {
+  --main-color: #333;
+  --secondary-color: #33333385;
+  --background-color: #ffbc13;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/*Start main services*/
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.main .container .main-services-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.main .container .main-services-title h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333333e6;
+  position: relative;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+.main .container .main-services-title h1::after {
+  content: "";
+  background-color: var(--background-color);
+  position: absolute;
+  top: 120%;
+  left: 46%;
+  width: 6%;
+  height: 3px;
+}
+.main .container .main-services-items {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 15px;
+  flex-wrap: wrap;
+  row-gap: 45px;
+}
+.main .container .main-services-items i {
+  background-color: var(--background-color);
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 30px;
+  width: 20%;
+  height: fit-content;
+}
+.main .container .main-services-items .item {
+  display: flex;
+  width: calc(100% / 3 - 10px);
+  column-gap: 30px;
+}
+.main .container .main-services-items .item h3 {
+  margin-bottom: 16px;
+  color: var(--main-color);
+  font-weight: 400;
+}
+.main .container .main-services-items .item p {
+  color: var(--secondary-color);
+  line-height: 21px;
+}
+
+/*End main services*/
