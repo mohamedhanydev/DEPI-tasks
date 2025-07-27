@@ -56,8 +56,10 @@ a {
 .header .top-header .left-items ul li a {
   padding: 1px 10px;
   transition: 0.3s;
-  border-left: 1px solid var(--grey-color);
-  border-right: 1px solid var(--grey-color);
+  border-left: 1px solid #777;
+}
+.header .top-header .left-items ul li:last-child a {
+  border-right: 1px solid #777;
 }
 .header .top-header .left-items ul li a i {
   color: var(--grey-color);
@@ -195,7 +197,8 @@ a {
 }
 .info .row div i {
   color: var(--primary-color);
-  font-size: 35px;
+  font-size: 40px;
+  margin-bottom: 8px;
 }
 .info .row div h3 {
   font-weight: 900;
@@ -209,3 +212,75 @@ a {
   transform: translateY(-10px);
 }
 /* End info section */
+
+/* Start services section */
+.services {
+  padding: var(--section-padding) 0;
+  background: linear-gradient(135deg, #fff6f3 0%, #f8f9fa 100%);
+}
+
+.services .row div {
+  border-radius: 20px;
+}
+.services .row .content {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  transition: all 1s ease;
+  margin: 20px 0;
+}
+.services .row div i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-bottom: 25px;
+  box-shadow: 0 0 0px 6px rgb(253 74 24 / 35%);
+}
+.services .row div h3 {
+  font-family: var(--title-fonts);
+  margin-bottom: 30px;
+}
+.services .row div p {
+  color: var(--secondary-color);
+  line-height: 2;
+}
+.services .row ul li {
+  padding: 5px 0;
+}
+.services .row ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  padding: 1px;
+  font-size: 14px;
+}
+.services .row a {
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.services .get-quote {
+  margin-top: 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+.services .get-quote .quote-text {
+  padding: 40px;
+}
+.services .get-quote .quote-text h3 {
+  font-weight: bold;
+  font-family: var(--title-fonts);
+}
+.services .get-quote .quote-text p {
+  color: var(--secondary-color);
+}
+/* End services section */
