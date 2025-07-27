@@ -22,6 +22,31 @@ body {
 a {
   text-decoration: none;
 }
+.btn {
+  height: fit-content;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  outline: none;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--transparent-color);
+}
+.special-heading {
+  font-size: 80px;
+  font-family: var(--title-fonts);
+  font-weight: bolder;
+  color: #e6e8eb;
+  margin-bottom: 0;
+}
+.special-heading + p {
+  color: var(--secondary-color);
+  margin-top: -18px;
+}
+
 /*Start header style*/
 .header .top-header {
   background-color: var(--dark-color);
@@ -59,14 +84,7 @@ a {
 .header .bottom-header .nav ul li a:hover {
   color: var(--primary-color);
 }
-.header .bottom-header .btn {
-  height: fit-content;
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  outline: none;
-  font-size: 15px;
-  padding: 10px 20px;
-}
+
 /*End header style*/
 
 /* Start landing page */
@@ -103,3 +121,59 @@ a {
   line-height: 1.4;
 }
 /* End landing page */
+
+/* Start about section */
+.about {
+  padding: var(--section-padding) 0;
+}
+.about .row:first-of-type {
+  padding-bottom: calc(var(--section-padding));
+}
+.about .row img {
+  max-width: 85%;
+  text-align: center;
+}
+.about .about-content h3 {
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-top: -20px;
+}
+.about .about-content p {
+  color: var(--secondary-color);
+  margin-top: 20px;
+  line-height: 1.8;
+}
+.about .about-content ul li {
+  color: var(--secondary-color);
+  padding: 5px 0;
+}
+.about .about-content ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  color: #fff;
+  margin-right: 0.5rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 8px;
+}
+.about .learn-more span {
+  font-weight: 600;
+}
+.about .learn-more span::before {
+  content: "\f04b";
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  font-size: 20px;
+  margin-right: 0.5rem;
+}
+/* End about section */
