@@ -13,3 +13,93 @@
   --transparent-color: rgb(253 74 24 / 72%);
   --section-padding: 80px;
 }
+body {
+  font-family: var(--body-fonts);
+}
+.container {
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+}
+/*Start header style*/
+.header .top-header {
+  background-color: var(--dark-color);
+  padding: 5px;
+  font-size: 0.7rem;
+}
+.header .top-header .left-items ul li a {
+  padding: 1px 10px;
+  transition: 0.3s;
+  border-left: 1px solid var(--grey-color);
+  border-right: 1px solid var(--grey-color);
+}
+.header .top-header .left-items ul li a i {
+  color: var(--grey-color);
+}
+.header .top-header .left-items ul li a:hover i {
+  color: var(--white-color);
+}
+
+.header .top-header .right-items ul li a {
+  color: var(--grey-color);
+}
+.header .bottom-header .logo {
+  width: 150px;
+}
+.header .bottom-header .logo img {
+  max-width: 100%;
+}
+.header .bottom-header .nav ul li a {
+  display: block;
+  padding: 25px 0;
+  color: var(--dark-color);
+  transition: 0.3s;
+}
+.header .bottom-header .nav ul li a:hover {
+  color: var(--primary-color);
+}
+.header .bottom-header .btn {
+  height: fit-content;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  outline: none;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+/*End header style*/
+
+/* Start landing page */
+.landing {
+  background-image: url("../images/banner.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: calc(100vh - 105px);
+}
+.landing .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--transparent-color);
+  opacity: 50%;
+}
+.landing .overlay-text-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  transform: translateY(-50%);
+  background-color: var(--primary-color);
+  z-index: 2;
+  padding: 20px 20px 20px 0;
+}
+.landing .overlay-text-container .overlay-text h1 {
+  font-family: var(--title-fonts);
+}
+.landing .overlay-text-container .overlay-text p {
+  color: var(--grey-color);
+  line-height: 1.4;
+}
+/* End landing page */
